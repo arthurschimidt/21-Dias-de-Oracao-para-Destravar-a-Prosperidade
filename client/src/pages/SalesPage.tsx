@@ -25,10 +25,10 @@ export default function SalesPage() {
       {/* Section Title */}
       <div className="max-w-5xl mx-auto px-4 py-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          <span className="text-cyan-500">Um Mundo de Fé</span> <span className="text-green-400">e Cores</span>
+          <span className="text-cyan-500">Transforme Sua Vida</span> <span className="text-green-400">em 21 Dias</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Nossos materiais são cristãos, educativos e prontos para imprimir. Uma coleção feita com carinho para ensinar valores bíblicos de forma lúdica!
+          Um guia espiritual completo para você destravar a prosperidade através da oração, fortalecer sua fé e atrair as bênçãos que Deus preparou para você!
         </p>
       </div>
 
@@ -36,22 +36,22 @@ export default function SalesPage() {
       <div className="max-w-6xl mx-auto px-4 pb-16">
         <div className="grid md:grid-cols-3 gap-6">
           <ContentCard
-            title="Desenhos para Colorir"
+            title="Orações Diárias"
             centered
             bgColor="bg-pink-50"
             icon={
               <div className="bg-pink-400 rounded-full p-4 inline-block">
-                <Palette className="h-8 w-8 text-white" />
+                <Heart className="h-8 w-8 text-white" />
               </div>
             }
           >
             <p className="text-gray-600">
-              Anjos, Jesus e histórias bíblicas em lindos desenhos que estimulam a criatividade.
+              21 orações poderosas para cada dia, guiando você em uma jornada de fé e transformação espiritual.
             </p>
           </ContentCard>
 
           <ContentCard
-            title="Historinhas Cristãs"
+            title="Versículos e Reflexões"
             centered
             bgColor="bg-blue-50"
             icon={
@@ -61,12 +61,12 @@ export default function SalesPage() {
             }
           >
             <p className="text-gray-600">
-              Histórias curtas que ensinam sobre fé, amor e bondade de um jeito que as crianças entendem.
+              Passagens bíblicas sobre prosperidade e abundância com reflexões profundas para fortalecer sua fé.
             </p>
           </ContentCard>
 
           <ContentCard
-            title="Fácil e Rápido"
+            title="Acesso Imediato"
             centered
             bgColor="bg-green-50"
             icon={
@@ -76,7 +76,7 @@ export default function SalesPage() {
             }
           >
             <p className="text-gray-600">
-              Materiais em PDF prontos para imprimir. É só baixar e a diversão começa!
+              Material em PDF para baixar agora mesmo e começar sua jornada de 21 dias rumo à prosperidade!
             </p>
           </ContentCard>
         </div>
@@ -86,7 +86,7 @@ export default function SalesPage() {
       <div className="max-w-6xl mx-auto px-4 pb-16">
         <div className="grid md:grid-cols-3 gap-6">
           <ContentCard
-            title="Em Casa com a Família"
+            title="Paz e Clareza"
             centered
             bgColor="bg-blue-100"
             icon={
@@ -96,37 +96,37 @@ export default function SalesPage() {
             }
           >
             <p className="text-gray-600">
-              Momentos especiais em família, ensinando valores cristãos de forma divertida e unindo gerações.
+              Encontre paz interior e clareza espiritual através de orações que conectam você com o propósito divino.
             </p>
           </ContentCard>
 
           <ContentCard
-            title="Na Escola Dominical"
+            title="Fé Fortalecida"
             centered
             bgColor="bg-green-100"
             icon={
               <div className="bg-green-500 rounded-full p-4 inline-block">
-                <Church className="h-8 w-8 text-white" />
+                <Sparkles className="h-8 w-8 text-white" />
               </div>
             }
           >
             <p className="text-gray-600">
-              Recursos perfeitos para professores e líderes engajarem as crianças nas lições bíblicas.
+              Fortaleça sua confiança em Deus e desenvolva uma mentalidade de abundância e gratidão constante.
             </p>
           </ContentCard>
 
           <ContentCard
-            title="Em Atividades Educativas"
+            title="Portas Abertas"
             centered
             bgColor="bg-yellow-100"
             icon={
               <div className="bg-yellow-500 rounded-full p-4 inline-block">
-                <GraduationCap className="h-8 w-8 text-white" />
+                <Sparkles className="h-8 w-8 text-white" />
               </div>
             }
           >
             <p className="text-gray-600">
-              Complemento ideal para educação cristã em escolas, grupos infantis e reforço escolar.
+              Destrave oportunidades e veja as bênçãos fluírem quando você alinha sua fé com a vontade de Deus.
             </p>
           </ContentCard>
         </div>
