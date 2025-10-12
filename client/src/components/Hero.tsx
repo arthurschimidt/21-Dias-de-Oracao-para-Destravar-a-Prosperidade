@@ -41,7 +41,7 @@ export default function Hero({
       <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Left */}
-          <div className="text-left space-y-6 order-2 lg:order-1">
+          <div className="text-center lg:text-left space-y-6 order-2 lg:order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.3)' }}>
               {title}
             </h1>
@@ -50,17 +50,19 @@ export default function Hero({
               {subtitle}
             </p>
 
-            {/* Price Box */}
-            <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-6 inline-block border border-white/30">
-              <p className="text-sm md:text-base text-white mb-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
-                De <span className="line-through">{oldPrice}</span> por apenas
-              </p>
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-900 font-bold text-4xl md:text-5xl px-8 py-3 rounded-xl inline-block shadow-lg">
-                {newPrice}
+            {/* Price Box - centered on mobile, inline on desktop */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/30">
+                <p className="text-sm md:text-base text-white mb-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
+                  De <span className="line-through">{oldPrice}</span> por apenas
+                </p>
+                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-900 font-bold text-4xl md:text-5xl px-8 py-3 rounded-xl inline-block shadow-lg">
+                  {newPrice}
+                </div>
+                <p className="text-sm md:text-base text-white mt-3" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
+                  {offerText}
+                </p>
               </div>
-              <p className="text-sm md:text-base text-white mt-3" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
-                {offerText}
-              </p>
             </div>
 
             {/* CTA Button */}
@@ -75,7 +77,7 @@ export default function Hero({
                 {ctaText}
               </Button>
               
-              <p className="text-sm md:text-base text-white flex items-center gap-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
+              <p className="text-sm md:text-base text-white flex items-center justify-center lg:justify-start gap-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
                 <Check className="h-5 w-5 text-white drop-shadow-md" />
                 {guaranteeText}
               </p>
