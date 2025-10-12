@@ -31,14 +31,14 @@ export default function Hero({
   };
 
   return (
-    <header className="relative overflow-hidden bg-gradient-to-br from-teal-300 via-cyan-300 to-sky-300">
+    <header className="relative overflow-hidden bg-gradient-to-br from-teal-300 via-cyan-300 to-sky-300 py-16 lg:py-20">
       {/* Decorative elements */}
       <Heart className="absolute top-20 left-10 h-10 w-10 text-pink-300 opacity-50" data-testid="icon-heart-1" />
       <Star className="absolute top-16 right-20 h-8 w-8 text-yellow-300 opacity-60" data-testid="icon-star-1" />
       <Star className="absolute bottom-20 left-1/4 h-6 w-6 text-yellow-200 opacity-50" data-testid="icon-star-2" />
       <Heart className="absolute bottom-32 right-1/3 h-8 w-8 text-pink-200 opacity-40" data-testid="icon-heart-2" />
       
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Left */}
           <div className="text-center lg:text-left space-y-6 order-2 lg:order-1">

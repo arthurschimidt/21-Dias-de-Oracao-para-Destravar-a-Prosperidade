@@ -5,33 +5,27 @@ interface ContentCardProps {
   children: React.ReactNode;
   centered?: boolean;
   className?: string;
+  icon?: React.ReactNode;
+  bgColor?: string;
 }
 
 export default function ContentCard({ 
   title, 
   children, 
   centered = false,
-  className = ""
+  className = "",
+  icon,
+  bgColor = "bg-white"
 }: ContentCardProps) {
-  const emojiRegex = /(✨|🙏|📖|🌟|🌍|❓|💫|🌿|💬)/g;
-  const parts = title.split(emojiRegex);
-  
   return (
-    <Card className={`p-8 mb-10 ${centered ? 'text-center' : ''} ${className}`}>
-      <h2 className="text-3xl font-extrabold mb-6">
-        {parts.map((part, index) => {
-          if (part && part.match(emojiRegex)) {
-            return <span key={index}>{part}</span>;
-          }
-          return (
-            <span 
-              key={index}
-              className="bg-gradient-to-r from-purple-600 via-blue-500 to-amber-500 bg-clip-text text-transparent"
-            >
-              {part}
-            </span>
-          );
-        })}
+    <Card className={`p-8 mb-10 ${bgColor} shadow-md ${centered ? 'text-center' : ''} ${className}`}>
+      {icon && (
+        <div className="flex justify-center mb-4">
+          {icon}
+        </div>
+      )}
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">
+        {title}
       </h2>
       {children}
     </Card>
