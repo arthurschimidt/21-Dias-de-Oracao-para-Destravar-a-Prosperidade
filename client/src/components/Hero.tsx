@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import heroImage from "@assets/ChatGPT Image 11 de out. de 2025, 22_33_45_1760232835894.png";
 
 interface HeroProps {
   title: string;
@@ -33,6 +34,14 @@ export default function Hero({
           <Sparkles className="h-8 w-8" />
           <h1 className="text-4xl md:text-5xl font-bold">{title}</h1>
           <Sparkles className="h-8 w-8" />
+        </div>
+
+        <div className="mb-8 flex justify-center">
+          <img 
+            src={heroImage} 
+            alt="21 Dias de Oração" 
+            className="rounded-2xl max-w-md w-full h-auto shadow-xl"
+          />
         </div>
         
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-95">
