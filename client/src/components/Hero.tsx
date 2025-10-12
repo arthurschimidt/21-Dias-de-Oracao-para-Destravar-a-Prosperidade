@@ -61,7 +61,7 @@ export default function Hero({
         <Button
           size="lg"
           onClick={handleCtaClick}
-          className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 h-auto rounded-full font-semibold transition-transform hover:scale-105"
+          className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 text-lg px-10 py-6 h-auto rounded-full font-semibold animate-breathe"
           data-testid="button-cta-hero"
         >
           {ctaText}
