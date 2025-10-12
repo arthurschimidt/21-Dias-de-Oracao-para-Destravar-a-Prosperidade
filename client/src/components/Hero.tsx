@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { Heart, Star } from "lucide-react";
 import heroImage from "@assets/ChatGPT Image 11 de out. de 2025, 22_33_45_1760232835894.png";
 
 interface HeroProps {
@@ -31,43 +31,65 @@ export default function Hero({
   };
 
   return (
-    <header className="relative overflow-hidden bg-gradient-to-br from-chart-3 to-chart-2 text-primary-foreground">
-      <div className="mx-auto max-w-4xl px-8 py-16 text-center">
-        <div className="flex items-center justify-center gap-2 mb-4">
-          <Sparkles className="h-8 w-8" />
-          <h1 className="text-4xl md:text-5xl font-bold">{title}</h1>
-          <Sparkles className="h-8 w-8" />
+    <header className="relative overflow-hidden bg-gradient-to-br from-cyan-200 via-cyan-100 to-blue-100">
+      {/* Decorative elements */}
+      <Heart className="absolute top-20 left-10 h-8 w-8 text-pink-400 opacity-60" data-testid="icon-heart-1" />
+      <Star className="absolute top-12 right-20 h-6 w-6 text-yellow-400 opacity-70" data-testid="icon-star-1" />
+      <Star className="absolute bottom-20 left-1/4 h-5 w-5 text-yellow-300 opacity-60" data-testid="icon-star-2" />
+      <Heart className="absolute bottom-32 right-1/3 h-6 w-6 text-pink-300 opacity-50" data-testid="icon-heart-2" />
+      
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Content Left */}
+          <div className="text-left space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+              {title}
+            </h1>
+            
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              {subtitle}
+            </p>
+
+            {/* Price Box */}
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 inline-block">
+              <p className="text-sm md:text-base text-gray-600 mb-2">
+                De <span className="line-through">{oldPrice}</span> por apenas
+              </p>
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-900 font-bold text-4xl md:text-5xl px-6 py-3 rounded-xl inline-block shadow-lg">
+                {newPrice}
+              </div>
+              <p className="text-sm md:text-base text-gray-600 mt-3 font-medium">
+                {offerText}
+              </p>
+            </div>
+
+            {/* CTA Button */}
+            <div className="pt-4">
+              <Button
+                size="lg"
+                onClick={handleCtaClick}
+                className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 text-lg md:text-xl px-8 py-6 h-auto rounded-full font-bold shadow-xl uppercase tracking-wide"
+                data-testid="button-cta-hero"
+              >
+                🛒 {ctaText}
+              </Button>
+              
+              <p className="mt-4 text-sm md:text-base text-gray-700 flex items-center gap-2">
+                <span className="text-green-600">✓</span> {guaranteeText}
+              </p>
+            </div>
+          </div>
+
+          {/* Image Right */}
+          <div className="flex justify-center lg:justify-end">
+            <img 
+              src={heroImage} 
+              alt="21 Dias de Oração" 
+              className="rounded-3xl max-w-lg w-full h-auto shadow-2xl"
+              data-testid="img-hero"
+            />
+          </div>
         </div>
-
-        <div className="mb-8 flex justify-center">
-          <img 
-            src={heroImage} 
-            alt="21 Dias de Oração" 
-            className="rounded-2xl max-w-md w-full h-auto shadow-xl"
-          />
-        </div>
-        
-        <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-95">
-          {subtitle}
-        </p>
-
-        <div className="flex items-center justify-center gap-4 text-3xl md:text-4xl font-bold mb-6">
-          <span className="line-through opacity-60">{oldPrice}</span>
-          <span className="text-5xl">{newPrice}</span>
-        </div>
-
-        <p className="text-lg mb-6 font-medium">{offerText}</p>
-
-        <Button
-          size="lg"
-          onClick={handleCtaClick}
-          className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 text-lg px-10 py-6 h-auto rounded-full font-semibold animate-breathe"
-          data-testid="button-cta-hero"
-        >
-          {ctaText}
-        </Button>
-
-        <p className="mt-6 text-sm opacity-90">{guaranteeText}</p>
       </div>
     </header>
   );
