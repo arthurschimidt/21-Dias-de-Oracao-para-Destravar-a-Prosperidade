@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21 Dias de Oração para Prosperidade ✨</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf3;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #f7d774, #d4af37);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #b8860b;
+      font-size: 1.8rem;
+    }
+    .highlight {
+      color: #b8860b;
+      font-weight: 600;
+    }
+    .price {
+      font-size: 1.8rem;
+      margin: 20px 0;
+    }
+    .price s {
+      color: #999;
+      margin-right: 10px;
+    }
+    .price .new {
+      color: #b8860b;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .btn {
+      background-color: #b8860b;
+      color: #fff;
+      padding: 18px 40px;
+      border-radius: 40px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #d4af37;
+      transform: scale(1.05);
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 20px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>✨ 21 Dias de Oração para Destravar a Prosperidade ✨</h1>
+  <p>Transforme sua vida com um plano espiritual poderoso de 21 dias de fé, foco e abundância.</p>
+
+  <div class="price">
+    <s>R$59,90</s> <span class="new">R$19,90</span>
+  </div>
+
+  <p>Oferta por tempo limitado!</p>
+  <a href="SEU-LINK-DE-PAGAMENTO-AQUI" class="btn">Quero Começar Agora 🙏</a>
+  <p>Garantia de 7 dias ou seu dinheiro de volta!</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Destrave a Prosperidade com Fé e Propósito 🌿</h2>
+    <p>Este manual foi criado para quem sente que, por mais que se esforce, as bênçãos parecem não fluir. Durante 21 dias, você será guiado por orações, versículos e reflexões que irão alinhar sua fé à verdadeira prosperidade.</p>
+    <p>Com apenas alguns minutos por dia, você despertará uma nova mentalidade — cheia de gratidão, fé e confiança na abundância divina.</p>
+  </div>
+
+  <div class="card">
+    <h2>O Que Você Vai Receber 📖</h2>
+    <ul>
+      <li>🌞 <strong>21 orações guiadas</strong> para renovar sua fé diariamente</li>
+      <li>💎 <strong>Mensagens inspiradoras</strong> para fortalecer sua confiança</li>
+      <li>🕊️ <strong>Versículos bíblicos</strong> sobre prosperidade e abundância</li>
+      <li>💭 <strong>Exercícios de gratidão</strong> para atrair bênçãos</li>
+      <li>✨ <strong>Bônus especial:</strong> “Oração da manhã para abrir caminhos”</li>
+    </ul>
+    <p>Tudo em um eBook digital (PDF) com acesso imediato!</p>
+  </div>
+
+  <div class="card">
+    <h2>Resultados que Você Vai Sentir 🌟</h2>
+    <ul>
+      <li>🧘‍♀️ Paz interior e clareza espiritual</li>
+      <li>💰 Oportunidades que começam a fluir naturalmente</li>
+      <li>❤️ Coração grato e confiante</li>
+      <li>🕊️ Fé fortalecida e esperança renovada</li>
+    </ul>
+    <p>A prosperidade não é apenas material — é viver em harmonia com o propósito de Deus.</p>
+  </div>
+
+  <div class="card">
+    <h2>Para Quem é Este Manual 🙏</h2>
+    <p>✔️ Quem sente que está travado financeiramente ou espiritualmente</p>
+    <p>✔️ Quem busca fortalecer sua fé e mentalidade de abundância</p>
+    <p>✔️ Quem quer viver uma transformação espiritual real</p>
+  </div>
+
+  <div class="card">
+    <h2>Depoimentos Reais 💬</h2>
+    <p><em>“No 7º dia, algo mudou dentro de mim. Comecei a ver oportunidades onde antes só via dificuldade.”</em> — <strong>Maria C.</strong></p>
+    <p><em>“Senti uma leveza espiritual enorme. Minhas vendas aumentaram e minha fé foi restaurada.”</em> — <strong>João S.</strong></p>
+    <p><em>“Esse manual me fez entender que prosperar é mais sobre fé do que dinheiro. E isso mudou tudo.”</em> — <strong>Patrícia M.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Você Pode Usar Onde Quiser 🌍</h2>
+    <p>📱 No celular — leia em qualquer lugar.</p>
+    <p>💻 No computador ou tablet.</p>
+    <p>📖 Imprima se quiser acompanhar com anotações e marcações.</p>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <h2>Comece Sua Jornada Agora 💫</h2>
+    <div class="price">
+      <s>R$59,90</s> <span class="new">R$19,90</span>
+    </div>
+    <a href="SEU-LINK-DE-PAGAMENTO-AQUI" class="btn">Quero o Manual Agora 🙌</a>
+    <p style="margin-top:10px;">Acesso vitalício ao eBook + bônus especial 🎁</p>
+    <p style="margin-top:15px;"><strong>Compra Segura 🔒</strong> | Garantia de 7 dias</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 Manual de 21 Dias de Oração — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
