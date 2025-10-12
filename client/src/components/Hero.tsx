@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Star } from "lucide-react";
+import { Heart, Star, ShoppingCart, Check } from "lucide-react";
 import heroImage from "@assets/ChatGPT Image 11 de out. de 2025, 22_33_45_1760232835894.png";
 
 interface HeroProps {
@@ -31,51 +31,53 @@ export default function Hero({
   };
 
   return (
-    <header className="relative overflow-hidden bg-gradient-to-br from-cyan-200 via-cyan-100 to-blue-100">
+    <header className="relative overflow-hidden bg-gradient-to-br from-cyan-300 via-cyan-200 to-teal-200">
       {/* Decorative elements */}
-      <Heart className="absolute top-20 left-10 h-8 w-8 text-pink-400 opacity-60" data-testid="icon-heart-1" />
-      <Star className="absolute top-12 right-20 h-6 w-6 text-yellow-400 opacity-70" data-testid="icon-star-1" />
-      <Star className="absolute bottom-20 left-1/4 h-5 w-5 text-yellow-300 opacity-60" data-testid="icon-star-2" />
-      <Heart className="absolute bottom-32 right-1/3 h-6 w-6 text-pink-300 opacity-50" data-testid="icon-heart-2" />
+      <Heart className="absolute top-20 left-10 h-10 w-10 text-pink-300 opacity-50" data-testid="icon-heart-1" />
+      <Star className="absolute top-16 right-20 h-8 w-8 text-yellow-300 opacity-60" data-testid="icon-star-1" />
+      <Star className="absolute bottom-20 left-1/4 h-6 w-6 text-yellow-200 opacity-50" data-testid="icon-star-2" />
+      <Heart className="absolute bottom-32 right-1/3 h-8 w-8 text-pink-200 opacity-40" data-testid="icon-heart-2" />
       
       <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Left */}
           <div className="text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-md">
               {title}
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/95 leading-relaxed">
               {subtitle}
             </p>
 
             {/* Price Box */}
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 inline-block">
-              <p className="text-sm md:text-base text-gray-600 mb-2">
+            <div className="bg-cyan-400/30 backdrop-blur-sm rounded-2xl p-6 inline-block border border-white/20">
+              <p className="text-sm md:text-base text-white/90 mb-2">
                 De <span className="line-through">{oldPrice}</span> por apenas
               </p>
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-900 font-bold text-4xl md:text-5xl px-6 py-3 rounded-xl inline-block shadow-lg">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-800 font-bold text-4xl md:text-5xl px-8 py-3 rounded-xl inline-block shadow-lg">
                 {newPrice}
               </div>
-              <p className="text-sm md:text-base text-gray-600 mt-3 font-medium">
+              <p className="text-sm md:text-base text-white/90 mt-3">
                 {offerText}
               </p>
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="pt-4 space-y-3">
               <Button
                 size="lg"
                 onClick={handleCtaClick}
-                className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 text-lg md:text-xl px-8 py-6 h-auto rounded-full font-bold shadow-xl uppercase tracking-wide"
+                className="bg-yellow-500 text-gray-800 hover:bg-yellow-400 text-base md:text-lg px-8 py-6 h-auto rounded-full font-bold shadow-xl uppercase tracking-wide"
                 data-testid="button-cta-hero"
               >
-                🛒 {ctaText}
+                <ShoppingCart className="h-5 w-5 mr-2" />
+                {ctaText}
               </Button>
               
-              <p className="mt-4 text-sm md:text-base text-gray-700 flex items-center gap-2">
-                <span className="text-green-600">✓</span> {guaranteeText}
+              <p className="text-sm md:text-base text-white/95 flex items-center gap-2">
+                <Check className="h-5 w-5 text-white" />
+                {guaranteeText}
               </p>
             </div>
           </div>
