@@ -24,7 +24,10 @@ export default function Hero({
   guaranteeText = "Garantia de 7 dias ou seu dinheiro de volta!",
 }: HeroProps) {
   const handleCtaClick = () => {
-    console.log("CTA clicked:", ctaLink);
+    const element = document.getElementById('final-cta');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   };
 
   return (

@@ -92,28 +92,30 @@ export default function SalesPage() {
         </ContentCard>
 
         <ContentCard title="Comece Sua Jornada Agora 💫" centered>
-          <PriceDisplay oldPrice="R$59,90" newPrice="R$19,90" className="my-8" />
+          <div id="final-cta">
+            <PriceDisplay oldPrice="R$59,90" newPrice="R$19,90" className="my-8" />
           
-          <Button
-            size="lg"
-            onClick={handleCtaClick}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 h-auto rounded-full font-semibold transition-transform hover:scale-105 mb-6"
-            data-testid="button-cta-final"
-          >
-            Quero o Manual Agora 🙌
-          </Button>
+            <Button
+              size="lg"
+              onClick={handleCtaClick}
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 h-auto rounded-full font-semibold transition-transform hover:scale-105 mb-6"
+              data-testid="button-cta-final"
+            >
+              Quero o Manual Agora 🙌
+            </Button>
 
-          <p className="text-base mb-4">
-            Acesso vitalício ao eBook + bônus especial 🎁
-          </p>
+            <p className="text-base mb-4">
+              Acesso vitalício ao eBook + bônus especial 🎁
+            </p>
 
-          <p className="text-base flex items-center justify-center gap-2">
-            <strong className="flex items-center gap-1">
-              <Lock className="h-4 w-4" /> Compra Segura
-            </strong>
-            <span className="text-muted-foreground">|</span>
-            Garantia de 7 dias
-          </p>
+            <p className="text-base flex items-center justify-center gap-2">
+              <strong className="flex items-center gap-1">
+                <Lock className="h-4 w-4" /> Compra Segura
+              </strong>
+              <span className="text-muted-foreground">|</span>
+              Garantia de 7 dias
+            </p>
+          </div>
         </ContentCard>
       </div>
 
