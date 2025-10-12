@@ -31,7 +31,7 @@ export default function Hero({
   };
 
   return (
-    <header className="relative overflow-hidden bg-gradient-to-br from-cyan-300 via-cyan-200 to-teal-200">
+    <header className="relative overflow-hidden bg-gradient-to-br from-teal-300 via-cyan-300 to-sky-300">
       {/* Decorative elements */}
       <Heart className="absolute top-20 left-10 h-10 w-10 text-pink-300 opacity-50" data-testid="icon-heart-1" />
       <Star className="absolute top-16 right-20 h-8 w-8 text-yellow-300 opacity-60" data-testid="icon-star-1" />
@@ -41,24 +41,24 @@ export default function Hero({
       <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Left */}
-          <div className="text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-md">
+          <div className="text-left space-y-6 order-2 lg:order-1">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.3)' }}>
               {title}
             </h1>
             
-            <p className="text-lg md:text-xl text-white/95 leading-relaxed">
+            <p className="text-lg md:text-xl text-white leading-relaxed" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.3)' }}>
               {subtitle}
             </p>
 
             {/* Price Box */}
-            <div className="bg-cyan-400/30 backdrop-blur-sm rounded-2xl p-6 inline-block border border-white/20">
-              <p className="text-sm md:text-base text-white/90 mb-2">
+            <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-6 inline-block border border-white/30">
+              <p className="text-sm md:text-base text-white mb-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
                 De <span className="line-through">{oldPrice}</span> por apenas
               </p>
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-800 font-bold text-4xl md:text-5xl px-8 py-3 rounded-xl inline-block shadow-lg">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-900 font-bold text-4xl md:text-5xl px-8 py-3 rounded-xl inline-block shadow-lg">
                 {newPrice}
               </div>
-              <p className="text-sm md:text-base text-white/90 mt-3">
+              <p className="text-sm md:text-base text-white mt-3" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
                 {offerText}
               </p>
             </div>
@@ -75,15 +75,15 @@ export default function Hero({
                 {ctaText}
               </Button>
               
-              <p className="text-sm md:text-base text-white/95 flex items-center gap-2">
-                <Check className="h-5 w-5 text-white" />
+              <p className="text-sm md:text-base text-white flex items-center gap-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
+                <Check className="h-5 w-5 text-white drop-shadow-md" />
                 {guaranteeText}
               </p>
             </div>
           </div>
 
-          {/* Image Right */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Image Right - appears first on mobile */}
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <img 
               src={heroImage} 
               alt="21 Dias de Oração" 
