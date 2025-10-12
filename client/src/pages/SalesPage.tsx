@@ -135,28 +135,28 @@ export default function SalesPage() {
       {/* Testimonials */}
       <div className="max-w-5xl mx-auto px-4 pb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-          <Heart className="inline h-8 w-8 text-pink-400 mb-1" /> <span className="text-blue-500">Corações </span>
-          <span className="text-green-400">Transformados</span> <Sparkles className="inline h-8 w-8 text-yellow-400 mb-1" />
+          <Heart className="inline h-8 w-8 text-pink-400 mb-1" /> <span className="text-blue-500">Vidas </span>
+          <span className="text-green-400">Transformadas</span> <Sparkles className="inline h-8 w-8 text-yellow-400 mb-1" />
         </h2>
         <p className="text-center text-lg text-gray-600 mb-10">
-          Veja como nossos materiais estão abençoando famílias e igrejas!
+          Veja como os 21 dias de oração mudaram a vida de quem confiou!
         </p>
         
         <div className="grid md:grid-cols-3 gap-6">
           <TestimonialCard
-            quote="Meus filhos amaram os desenhos e aprenderam muito com as historinhas! É incrível ver como eles se envolvem com as atividades e ainda aprendem sobre Jesus."
+            quote="No 7º dia, algo mudou dentro de mim. Comecei a ver oportunidades onde antes só via dificuldade. Minha fé foi restaurada e as portas começaram a se abrir!"
             author="Mariana S."
-            role="Mãe de 2 filhos"
+            role="Empreendedora"
           />
           <TestimonialCard
-            quote="Uso esses materiais na minha classe e as crianças ficam encantadas! As histórias são perfeitas para ensinar valores cristãos de forma divertida e memorável."
-            author="Pr. João Alves"
-            role="Líder de Escola Dominical"
+            quote="Esse manual transformou minha relação com Deus e com o dinheiro. Aprendi que prosperidade vai além do financeiro. Hoje vivo em abundância espiritual e material!"
+            author="Carlos Mendes"
+            role="Empresário"
           />
           <TestimonialCard
-            quote="Que presente maravilhoso! Finalmente encontrei materiais de qualidade que combinam diversão e educação cristã. Minha filha pede para colorir todos os dias!"
-            author="Ana C."
-            role="Educadora Cristã"
+            quote="Estava travada há anos. Depois dos 21 dias, recebi uma promoção inesperada e minha família foi abençoada. A gratidão e a fé movem montanhas!"
+            author="Ana Paula R."
+            role="Professora"
           />
         </div>
       </div>
@@ -195,39 +195,39 @@ export default function SalesPage() {
       </div>
 
       {/* Final CTA */}
-      <div id="final-cta" className="bg-gradient-to-br from-orange-300 via-orange-400 to-pink-400 py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.2)' }}>
-            Comece a Aventura! <Sparkles className="inline h-10 w-10 mb-2" />
+      <div id="final-cta" className="bg-gradient-to-br from-orange-300 via-orange-400 to-pink-400 py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 px-2" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.2)' }}>
+            Comece a Aventura! <Sparkles className="inline h-8 md:h-10 w-8 md:w-10 mb-2" />
           </h2>
           
-          <div className="bg-orange-600/40 backdrop-blur-sm rounded-3xl p-8 mb-8 inline-block">
-            <p className="text-xl text-white font-semibold mb-4">
+          <div className="bg-orange-600/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-8 mx-auto max-w-md">
+            <p className="text-base md:text-xl text-white font-semibold mb-4">
               OFERTA ESPECIAL: de R$49,90 por apenas
             </p>
-            <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 text-blue-900 font-bold text-5xl md:text-6xl px-10 py-4 rounded-2xl inline-block shadow-2xl">
+            <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 text-blue-900 font-bold text-4xl md:text-6xl px-8 md:px-10 py-3 md:py-4 rounded-2xl inline-block shadow-2xl">
               R$19,90
             </div>
-            <p className="text-lg text-white mt-4 font-medium">
+            <p className="text-base md:text-lg text-white mt-4 font-medium">
               Acesso vitalício a todo o material!
             </p>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-6 px-2">
             <Button
               size="lg"
               onClick={handleCtaClick}
-              className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-xl px-12 py-7 h-auto rounded-full font-bold shadow-2xl uppercase tracking-wide"
+              className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 text-sm md:text-lg px-6 md:px-12 py-5 md:py-7 h-auto rounded-full font-bold shadow-2xl uppercase w-full md:w-auto max-w-md"
               data-testid="button-cta-final"
             >
-              <ShoppingCart className="h-6 w-6 mr-2" />
-              Compre Aqui e Garanta o Desconto!
+              <ShoppingCart className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
+              <span className="text-center leading-tight">Compre Aqui e Garanta o Desconto!</span>
             </Button>
           </div>
 
-          <p className="text-white text-lg flex items-center justify-center gap-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
-            <Shield className="h-5 w-5" />
-            Compra Segura | Garantia de 7 Dias
+          <p className="text-white text-base md:text-lg flex items-center justify-center gap-2 px-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)' }}>
+            <Shield className="h-5 w-5 flex-shrink-0" />
+            <span>Compra Segura | Garantia de 7 Dias</span>
           </p>
         </div>
       </div>
