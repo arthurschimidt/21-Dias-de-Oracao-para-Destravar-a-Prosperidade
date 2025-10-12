@@ -195,20 +195,20 @@ export default function SalesPage() {
       </div>
 
       {/* Final CTA */}
-      <div id="final-cta" className="bg-gradient-to-br from-cyan-400 via-cyan-300 to-teal-300 py-16 px-4">
+      <div id="final-cta" className="bg-gradient-to-br from-orange-300 via-orange-400 to-pink-400 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 px-2" style={{ textShadow: '3px 3px 10px rgba(0,0,0,0.2)' }}>
             Comece a Aventura! <Sparkles className="inline h-8 md:h-10 w-8 md:w-10 mb-2" />
           </h2>
           
-          <div className="bg-cyan-300/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-8 mx-auto max-w-md border-2 border-white/40">
-            <p className="text-base md:text-xl text-white font-semibold mb-4" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.2)' }}>
+          <div className="bg-orange-800/30 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-8 mx-auto max-w-md">
+            <p className="text-base md:text-xl text-white font-semibold mb-4">
               OFERTA ESPECIAL: de R$49,90 por apenas
             </p>
-            <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-600 font-bold text-4xl md:text-6xl px-8 md:px-10 py-3 md:py-4 rounded-2xl inline-block shadow-lg border-4 border-yellow-300">
+            <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 text-blue-600 font-bold text-4xl md:text-6xl px-8 md:px-10 py-3 md:py-4 rounded-2xl inline-block shadow-lg border-4 border-white">
               R$19,90
             </div>
-            <p className="text-base md:text-lg text-white mt-4 font-medium" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.2)' }}>
+            <p className="text-base md:text-lg text-white mt-4 font-medium">
               Acesso vitalício a todo o material!
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function SalesPage() {
             <Button
               size="lg"
               onClick={handleCtaClick}
-              className="bg-yellow-400 text-gray-800 hover:bg-yellow-500 text-sm md:text-lg px-6 md:px-12 py-5 md:py-7 h-auto rounded-full font-bold shadow-xl uppercase w-full md:w-auto max-w-md border-2 border-yellow-500"
+              className="bg-yellow-400 text-green-800 hover:bg-yellow-500 text-sm md:text-lg px-6 md:px-12 py-5 md:py-7 h-auto rounded-full font-bold shadow-xl uppercase w-full md:w-auto max-w-md"
               data-testid="button-cta-final"
             >
               <ShoppingCart className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
@@ -225,7 +225,7 @@ export default function SalesPage() {
             </Button>
           </div>
 
-          <p className="text-white text-base md:text-lg flex items-center justify-center gap-2 px-2" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.2)' }}>
+          <p className="text-white text-base md:text-lg flex items-center justify-center gap-2 px-2">
             <Shield className="h-5 w-5 flex-shrink-0" />
             <span>Compra Segura | Garantia de 7 Dias</span>
           </p>
