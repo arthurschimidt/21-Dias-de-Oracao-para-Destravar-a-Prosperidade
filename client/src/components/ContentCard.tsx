@@ -15,7 +15,9 @@ export default function ContentCard({
 }: ContentCardProps) {
   return (
     <Card className={`p-8 mb-10 ${centered ? 'text-center' : ''} ${className}`}>
-      <h2 className="text-primary text-3xl font-semibold mb-6">{title}</h2>
+      <h2 className="text-3xl font-extrabold mb-6 bg-gradient-to-r from-purple-600 via-blue-500 to-amber-500 bg-clip-text text-transparent">
+        {title}
+      </h2>
       {children}
     </Card>
   );
