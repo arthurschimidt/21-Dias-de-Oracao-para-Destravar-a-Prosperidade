@@ -42,24 +42,24 @@ export default function Hero({
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Left */}
           <div className="text-center lg:text-left space-y-6 order-2 lg:order-1">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight" style={{ textShadow: '3px 3px 10px rgba(0,0,0,0.2)' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)', WebkitFontSmoothing: 'antialiased' }}>
               {title}
             </h1>
             
-            <p className="text-lg md:text-xl text-white leading-relaxed" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.2)' }}>
+            <p className="text-lg md:text-xl text-white leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.3)', WebkitFontSmoothing: 'antialiased' }}>
               {subtitle}
             </p>
 
             {/* Price Box - centered on mobile, inline on desktop */}
             <div className="flex justify-center lg:justify-start">
               <div className="bg-cyan-300/40 backdrop-blur-sm rounded-3xl p-6 text-center border-2 border-white/40">
-                <p className="text-base md:text-lg text-white mb-3" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.2)' }}>
+                <p className="text-base md:text-lg text-white mb-3 font-semibold" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.4)', WebkitFontSmoothing: 'antialiased' }}>
                   De <span className="line-through">{oldPrice}</span> por apenas
                 </p>
-                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-600 font-bold text-5xl md:text-6xl px-10 py-4 rounded-2xl inline-block shadow-lg border-4 border-yellow-300 animate-breathe">
+                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-600 font-black text-5xl md:text-6xl px-10 py-4 rounded-2xl inline-block shadow-lg border-4 border-yellow-300 animate-breathe" style={{ WebkitFontSmoothing: 'antialiased' }}>
                   {newPrice}
                 </div>
-                <p className="text-base md:text-lg text-white mt-3" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.2)' }}>
+                <p className="text-base md:text-lg text-white mt-3 font-semibold" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.4)', WebkitFontSmoothing: 'antialiased' }}>
                   {offerText}
                 </p>
               </div>
@@ -77,7 +77,7 @@ export default function Hero({
                 Compre Aqui
               </Button>
               
-              <p className="text-sm md:text-base text-white flex items-center justify-center lg:justify-start gap-2" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.2)' }}>
+              <p className="text-sm md:text-base text-white flex items-center justify-center lg:justify-start gap-2 font-medium" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.4)', WebkitFontSmoothing: 'antialiased' }}>
                 <Check className="h-5 w-5 text-white drop-shadow-md" />
                 {guaranteeText}
               </p>

@@ -197,18 +197,18 @@ export default function SalesPage() {
       {/* Final CTA */}
       <div id="final-cta" className="bg-gradient-to-br from-orange-300 via-orange-400 to-pink-400 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 px-2" style={{ textShadow: '3px 3px 10px rgba(0,0,0,0.2)' }}>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8 px-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)', WebkitFontSmoothing: 'antialiased' }}>
             Comece a Aventura! <Sparkles className="inline h-8 md:h-10 w-8 md:w-10 mb-2 animate-breathe" />
           </h2>
           
           <div className="bg-orange-800/30 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-8 mx-auto max-w-md">
-            <p className="text-base md:text-xl text-white font-semibold mb-4">
+            <p className="text-base md:text-xl text-white font-bold mb-4" style={{ WebkitFontSmoothing: 'antialiased' }}>
               OFERTA ESPECIAL: de R$49,90 por apenas
             </p>
-            <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 text-blue-600 font-bold text-4xl md:text-6xl px-8 md:px-10 py-3 md:py-4 rounded-2xl inline-block shadow-lg border-4 border-white animate-breathe">
+            <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 text-blue-600 font-black text-4xl md:text-6xl px-8 md:px-10 py-3 md:py-4 rounded-2xl inline-block shadow-lg border-4 border-white animate-breathe" style={{ WebkitFontSmoothing: 'antialiased' }}>
               R$19,90
             </div>
-            <p className="text-base md:text-lg text-white mt-4 font-medium">
+            <p className="text-base md:text-lg text-white mt-4 font-bold" style={{ WebkitFontSmoothing: 'antialiased' }}>
               Acesso vitalício a todo o material!
             </p>
           </div>
@@ -225,7 +225,7 @@ export default function SalesPage() {
             </Button>
           </div>
 
-          <p className="text-white text-base md:text-lg flex items-center justify-center gap-2 px-2">
+          <p className="text-white text-base md:text-lg flex items-center justify-center gap-2 px-2 font-semibold" style={{ WebkitFontSmoothing: 'antialiased' }}>
             <Shield className="h-5 w-5 flex-shrink-0" />
             <span>Compra Segura | Garantia de 7 Dias</span>
           </p>
