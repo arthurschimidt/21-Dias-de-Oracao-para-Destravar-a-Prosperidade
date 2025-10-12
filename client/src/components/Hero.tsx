@@ -33,10 +33,10 @@ export default function Hero({
   return (
     <header className="relative overflow-hidden bg-gradient-to-br from-cyan-400 via-cyan-300 to-teal-300 py-16 lg:py-20">
       {/* Decorative elements */}
-      <Heart className="absolute top-20 left-10 h-10 w-10 text-pink-400 opacity-60" data-testid="icon-heart-1" />
-      <Star className="absolute top-16 right-20 h-8 w-8 text-yellow-300 opacity-70" data-testid="icon-star-1" />
-      <Star className="absolute bottom-20 left-1/4 h-6 w-6 text-yellow-200 opacity-60" data-testid="icon-star-2" />
-      <Heart className="absolute bottom-32 right-1/3 h-8 w-8 text-pink-300 opacity-50" data-testid="icon-heart-2" />
+      <Heart className="absolute top-20 left-10 h-10 w-10 text-pink-400 opacity-60 animate-breathe-slow" data-testid="icon-heart-1" />
+      <Star className="absolute top-16 right-20 h-8 w-8 text-yellow-300 opacity-70 animate-breathe" data-testid="icon-star-1" />
+      <Star className="absolute bottom-20 left-1/4 h-6 w-6 text-yellow-200 opacity-60 animate-breathe-slow" data-testid="icon-star-2" />
+      <Heart className="absolute bottom-32 right-1/3 h-8 w-8 text-pink-300 opacity-50 animate-breathe" data-testid="icon-heart-2" />
       
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -56,7 +56,7 @@ export default function Hero({
                 <p className="text-base md:text-lg text-white mb-3" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.2)' }}>
                   De <span className="line-through">{oldPrice}</span> por apenas
                 </p>
-                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-600 font-bold text-5xl md:text-6xl px-10 py-4 rounded-2xl inline-block shadow-lg border-4 border-yellow-300">
+                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-600 font-bold text-5xl md:text-6xl px-10 py-4 rounded-2xl inline-block shadow-lg border-4 border-yellow-300 animate-breathe">
                   {newPrice}
                 </div>
                 <p className="text-base md:text-lg text-white mt-3" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.2)' }}>
@@ -70,7 +70,7 @@ export default function Hero({
               <Button
                 size="lg"
                 onClick={handleCtaClick}
-                className="bg-yellow-400 text-gray-800 hover:bg-yellow-500 text-base md:text-lg px-10 py-6 h-auto rounded-full font-bold shadow-xl uppercase tracking-wide border-2 border-yellow-500"
+                className="bg-yellow-400 text-gray-800 hover:bg-yellow-500 text-base md:text-lg px-10 py-6 h-auto rounded-full font-bold shadow-xl uppercase tracking-wide border-2 border-yellow-500 animate-breathe-slow"
                 data-testid="button-cta-hero"
               >
                 <ShoppingCart className="h-5 w-5 mr-2" />

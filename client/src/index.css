@@ -325,4 +325,22 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Breathing animation */
+  @keyframes breathe {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-breathe {
+    animation: breathe 2s ease-in-out infinite;
+  }
+
+  .animate-breathe-slow {
+    animation: breathe 3s ease-in-out infinite;
+  }
 }
