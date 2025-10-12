@@ -3,6 +3,7 @@ import ContentCard from "@/components/ContentCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import PriceDisplay from "@/components/PriceDisplay";
 import SalesFooter from "@/components/SalesFooter";
+import FAQ from "@/components/FAQ";
 import { Button } from "@/components/ui/button";
 import { Lock } from "lucide-react";
 
@@ -89,6 +90,35 @@ export default function SalesPage() {
             <p>💻 No computador ou tablet.</p>
             <p>📖 Imprima se quiser acompanhar com anotações e marcações.</p>
           </div>
+        </ContentCard>
+
+        <ContentCard title="Perguntas Frequentes ❓">
+          <FAQ items={[
+            {
+              question: "Como vou receber o manual?",
+              answer: "Você receberá o acesso imediato por email logo após a confirmação do pagamento. O manual é um eBook em PDF que pode ser baixado e usado em qualquer dispositivo."
+            },
+            {
+              question: "Posso imprimir o manual?",
+              answer: "Sim! O PDF pode ser impresso para você acompanhar com anotações e marcações físicas, se preferir."
+            },
+            {
+              question: "Como funciona a garantia de 7 dias?",
+              answer: "Você tem 7 dias de garantia incondicional. Se não ficar satisfeito, devolvemos 100% do seu dinheiro, sem perguntas."
+            },
+            {
+              question: "Preciso ter experiência com orações?",
+              answer: "Não! O manual foi criado para todos, desde iniciantes até quem já tem prática de oração. Cada dia é guiado passo a passo."
+            },
+            {
+              question: "Quanto tempo leva cada dia?",
+              answer: "Apenas 10 a 15 minutos por dia. É um momento especial de conexão espiritual que cabe na sua rotina."
+            },
+            {
+              question: "O pagamento é seguro?",
+              answer: "Sim! Utilizamos plataformas de pagamento com certificação de segurança. Seus dados estão totalmente protegidos."
+            }
+          ]} />
         </ContentCard>
 
         <ContentCard title="Comece Sua Jornada Agora 💫" centered>
