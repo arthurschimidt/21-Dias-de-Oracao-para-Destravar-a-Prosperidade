@@ -24,10 +24,7 @@ export default function Hero({
   guaranteeText = "Garantia de 7 dias ou seu dinheiro de volta!",
 }: HeroProps) {
   const handleCtaClick = () => {
-    const element = document.getElementById('final-cta');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+    window.open('https://pay.kiwify.com.br/SFL2mGL', '_blank');
   };
 
   return (

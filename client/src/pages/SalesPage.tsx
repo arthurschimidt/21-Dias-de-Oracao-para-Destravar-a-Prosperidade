@@ -8,7 +8,7 @@ import { BookOpen, Sparkles, Heart, ShoppingCart, Shield, Palette, Church, Gradu
 
 export default function SalesPage() {
   const handleCtaClick = () => {
-    console.log("CTA button clicked");
+    window.open('https://pay.kiwify.com.br/SFL2mGL', '_blank');
   };
 
   return (
